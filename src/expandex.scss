@@ -1,0 +1,21 @@
+// Expandex.js plugin
+// ------------------
+
+.expandex-active {
+
+  // state - default (prevents FOUC)
+  .expandex-bag {
+    display: none;
+  }
+
+  // state - closed
+  &.is-closed .expandex-bag {
+    display: none;
+  }
+
+  // state - open
+  &.is-open .expandex-bag {
+    display: block;
+  }
+
+}
